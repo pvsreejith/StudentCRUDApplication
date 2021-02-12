@@ -1,0 +1,33 @@
+﻿@model StudentInfo.Context.Table_Student
+@{
+    ViewBag.Title = "ViewStudent";
+}
+
+<h2>ViewStudent</h2>
+
+<table class="table table-hover">
+    <tr>
+        <th>Name</th>
+        <th>Fname</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Description</th>
+
+    </tr>
+
+    <tr>
+        
+        <td>@Model.Name</td>
+        <td>@Model.Fname</td>
+        <td>@Model.Email</td>
+        <td>@Model.Mobile</td>
+        <td>@Model.Description</td>
+
+    </tr>
+
+
+</table>
+
+<div >
+    <a href="https://localhost:44330/Student/Studentlist" >Back</a>
+</div>
